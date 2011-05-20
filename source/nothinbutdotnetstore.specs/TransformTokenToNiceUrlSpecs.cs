@@ -39,23 +39,18 @@ namespace nothinbutdotnetstore.specs
 
     public class when_getting_the_completed_url : concern
     {
-      private const string url = "myurl";
-
-      private Establish c = () =>
-      {
+      private Establish c = () => 
         sut_setup.run(x => x.strings.Add("myurl"));
-      };
       
       private Because b = () =>
       {
         result = sut.get_result();
       };
 
-
-      private It should_contain_the_ = () =>
+      private It should_gernerate_a_properly_formatted_url = () =>
         result.ShouldEqual(url);
 
-      private static KeyValuePair<string, object> url_token;
+      private const string url = @"http://localhost/myurl.denver/";
       private static string result;
     }
   }
