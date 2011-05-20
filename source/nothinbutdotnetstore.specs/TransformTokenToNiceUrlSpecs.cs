@@ -41,9 +41,13 @@ namespace nothinbutdotnetstore.specs
     {
       private const string url = "myurl";
 
+      private Establish c = () =>
+      {
+        sut_setup.run(x => x.strings.Add("myurl"));
+      };
+      
       private Because b = () =>
       {
-        sut.downcast_to<TransformTokensToNiceUrl>().strings.Add("myurl");
         result = sut.get_result();
       };
 
