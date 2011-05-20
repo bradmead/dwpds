@@ -16,8 +16,6 @@ namespace nothinbutdotnetstore.web.core.urls
 
     public string get_result()
     {
-      string_builder.Append("http://");
-      string_builder.Append("localhost/");
       string_builder.Append(strings[0]);
       string_builder.Append(".denver/");
 

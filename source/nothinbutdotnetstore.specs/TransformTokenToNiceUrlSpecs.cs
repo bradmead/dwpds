@@ -50,7 +50,7 @@ namespace nothinbutdotnetstore.specs
       private It should_gernerate_a_properly_formatted_url = () =>
         result.ShouldEqual(url);
 
-      private const string url = @"http://localhost/myurl.denver/";
+      private const string url = "myurl.denver/";
       private static string result;
     }
   }
