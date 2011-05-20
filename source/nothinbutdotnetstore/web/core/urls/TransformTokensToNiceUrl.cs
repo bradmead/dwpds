@@ -6,16 +6,18 @@ namespace nothinbutdotnetstore.web.core.urls
 {
   public class TransformTokensToNiceUrl : ITransformStoreTokensToANiceUrl
   {
-    public StringBuilder string_builder = new StringBuilder();
+    public List<string> strings = new List<string>();
+    StringBuilder string_builder = new StringBuilder();
 
     public void visit(KeyValuePair<string, object> item)
     {
-      string_builder.Append(item.Value);
+      strings.Add(item.Value.ToString());
     }
 
     public string get_result()
     {
-      throw new NotImplementedException();
+      string_builder.Append(strings[0]);
+      return string_builder.ToString();
     }
   }
 }
