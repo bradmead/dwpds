@@ -132,6 +132,7 @@
     <Compile Include="web\core\urls\ITransformStoreTokensToANiceUrl.cs" />
     <Compile Include="web\core\urls\MapPropertyAccessorExpressionToModelDotMember.cs" />
     <Compile Include="web\core\urls\PayloadDetailConfiguration.cs" />
+    <Compile Include="web\core\urls\TransformTokensToNiceUrl.cs" />
     <Compile Include="web\core\urls\UrlBuilder.cs" />
     <Compile Include="web\core\urls\UrlBuilderFactory.cs" />
     <Compile Include="web\core\WebFormDisplayEngine.cs" />

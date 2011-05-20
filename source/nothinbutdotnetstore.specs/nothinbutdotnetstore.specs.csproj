@@ -108,6 +108,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TransformTokenToNiceUrlSpecs.cs" />
     <Compile Include="CommandUrlSpecs.cs" />
     <Compile Include="EnumerableExtensionsSpecs.cs" />
     <Compile Include="ItemDetailSpecifierSpecs.cs" />
