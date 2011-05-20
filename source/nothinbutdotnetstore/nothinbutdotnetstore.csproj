@@ -82,6 +82,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="infrastructure\CommandUrl.cs" />
     <Compile Include="infrastructure\container\IFetchDependencies.cs" />
+    <Compile Include="infrastructure\ILoadConfigurationInformation.cs" />
     <Compile Include="infrastructure\IMapADiscretePair.cs" />
     <Compile Include="infrastructure\IMapFromOneTypeToAnother.cs" />
     <Compile Include="infrastructure\IStoreTokens.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="web\core\stubs\StubMissingRequest.cs" />
     <Compile Include="web\core\stubs\StubRequestFactory.cs" />
     <Compile Include="web\core\stubs\StubSetOfCommands.cs" />
+    <Compile Include="web\CurrentSetOfCommands.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
